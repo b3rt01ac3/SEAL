@@ -644,6 +644,15 @@ namespace seal
         }
 
         /**
+         * @brief Set the scale object
+         * 
+         * @param scale 
+         */
+        SEAL_NODISCARD inline void set_scale(double scale) noexcept {
+            this->scale_ = scale;
+        }
+        
+        /**
         Returns a constant reference to the scale. This is only needed when using the CKKS encryption scheme.
         */
         SEAL_NODISCARD inline const double &scale() const noexcept
