@@ -648,7 +648,7 @@ namespace seal
          *
          * @param scale
          */
-        SEAL_NODISCARD inline void set_scale(double scale) noexcept {
+        inline void set_scale(double scale) noexcept {
             this->scale_ = scale;
         }
 
